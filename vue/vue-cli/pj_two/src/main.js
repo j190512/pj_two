@@ -3,12 +3,14 @@ import App from './App'
 import router from './router' 
 
 //引入统一默认的css样式
-import './assets/styles/reset.css'
+import 'styles/reset.css'
+import 'styles/iconfont.css'
 //引入解决移动端1像素问题的css文件
-import './assets/styles/border.css'
+import 'styles/border.css'
 //引入fastClick
 import fastClick from 'fastclick'
 fastClick.attach(document.body)
+
 
 Vue.config.productionTip = false
 
