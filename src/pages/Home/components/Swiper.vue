@@ -45,6 +45,4 @@ export default {
   padding-bottom 26%
   .swiper-img
     width 100%
-  .swiper-pagination-bullet-active
-    background #fff
 </style>
