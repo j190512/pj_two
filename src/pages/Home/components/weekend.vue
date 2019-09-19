@@ -3,11 +3,11 @@
       <div class="weekend-title">周末去哪儿</div>
       <div>
           <ul>
-              <li class="weekend-list">
-                  <div class="img"><img src="https://imgs.qunarzz.com/sight/source/1511/8f/bf3a40e4afcf29.jpg_r_640x214_90225212.jpg" alt=""></div>
+              <li class="weekend-list" v-for="item of weekendList" :key="item.id">
+                  <div class="img"><img :src="item.imgUrl" alt=""></div>
                   <div class="product-item">
-                      <p class="product-name">泉心泉意</p>
-                      <p class="product-desc">这个冬天不干燥，养生养颜休闲一举两得，这里有厦门独特的温泉渡假旅游区</p>
+                      <p class="product-name">{{item.productName}}</p>
+                      <p class="product-desc">{{item.productDesc}}</p>
                   </div>
               </li>
           </ul>
@@ -19,7 +19,10 @@
 
 <script>
 export default {
-    name:'HomeWeekend'
+    name:'HomeWeekend',
+    props:{
+        weekendList:Array
+    }
 }
 </script>
 

@@ -11,13 +11,13 @@
     <ul class="hotsale-list">
       <li class="hotsale-item" v-for="item of hotList" :key="item.id">
         <a href="#">
-          <div class="hot-tag">
+          <div class="hot-tag" v-if="item.tag">
             <img :src="item.tag" alt srcset />
           </div>
           <div class="hot-img">
             <img :src="item.imgUrl" alt />
           </div>
-          <div class="hot-sight-name">XXX</div>
+          <div class="hot-sight-name">{{item.sightName}}</div>
           <div class="hot-price">
             <span class="price">
               ￥
@@ -33,62 +33,8 @@
 <script>
 export default {
   name: "HomeWeek",
-  data() {
-    return {
-      hotList: [
-        {
-          id: "001",
-          tag:
-            "https://imgs.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/1506/f6/f6b727f036fe5d6d.water.jpg_250x250_d22ecf6b.jpg",
-          sightName: "12",
-          priceNum: 35
-        },
-        {
-          id: "002",
-          tag:
-            "https://imgs.qunarzz.com/piao/fusion/1710/2d/36d0c4adaebbbc02.png",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/1506/f6/f6b727f036fe5d6d.water.jpg_250x250_d22ecf6b.jpg",
-          sightName: "12",
-          priceNum: 35
-        },
-        {
-          id: "003",
-          tag:
-            "https://imgs.qunarzz.com/piao/fusion/1710/67/edc47ffef9e96b02.png",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/1506/f6/f6b727f036fe5d6d.water.jpg_250x250_d22ecf6b.jpg",
-          sightName: "12",
-          priceNum: 35
-        },
-        {
-          id: "004",
-          tag: "#",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/1506/f6/f6b727f036fe5d6d.water.jpg_250x250_d22ecf6b.jpg",
-          sightName: "12",
-          priceNum: 35
-        },
-        {
-          id: "005",
-          tag: "#",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/1506/f6/f6b727f036fe5d6d.water.jpg_250x250_d22ecf6b.jpg",
-          sightName: "12",
-          priceNum: 35
-        },
-        {
-          id: "006",
-          tag: "#",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/1506/f6/f6b727f036fe5d6d.water.jpg_250x250_d22ecf6b.jpg",
-          sightName: "12",
-          priceNum: 35
-        }
-      ]
-    };
+  props:{
+    hotList:Array
   }
 };
 </script>

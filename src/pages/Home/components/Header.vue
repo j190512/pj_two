@@ -8,14 +8,17 @@
       输入景点|城市|游玩主题
     </div>
     <div class="header-right">
-      <div class="iconfont arrow-icon">城市&#xe64a;</div>
+      <div class="iconfont arrow-icon">{{this.city}}&#xe64a;</div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HomeHeader"
+  name: "HomeHeader",
+  props:{
+    city:String
+  }
 };
 </script>
 

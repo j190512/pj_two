@@ -4,7 +4,7 @@
       <swiper-slide v-for="(page,index) of pages" :key="index">
         <div v-for="item of page" :key="item.id">
           <div class="icon">
-            <img :src="item.imgSrc" alt="景点门票" />
+            <img :src="item.imgUrl" alt="景点门票" />
             <div class="text">{{item.desc}}</div>
           </div>
         </div>
@@ -21,76 +21,11 @@ export default {
     return {
       swiperOption: {
         pagination: ".swiper-pagination"
-      },
-      iconList: [
-        {
-          id: "001",
-          imgSrc:
-            "https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
-          desc: "景点门票"
-        },
-        {
-          id: "002",
-          imgSrc:
-            "https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
-          desc: "景点门票"
-        },
-        {
-          id: "003",
-          imgSrc:
-            "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/3ef092d0a89ffddb7f781cda30c8ae49.png",
-          desc: "暑假大促"
-        },
-        {
-          id: "004",
-          imgSrc:
-            "https://imgs.qunarzz.com/piao/fusion/1803/35/9639025c30a3d802.png",
-          desc: "一日游"
-        },
-        {
-          id: "005",
-          imgSrc:
-            "https://imgs.qunarzz.com/piao/fusion/1803/35/9639025c30a3d802.png",
-          desc: "一日游"
-        },
-        {
-          id: "006",
-          imgSrc:
-            "https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
-          desc: "景点门票"
-        },
-        {
-          id: "007",
-          imgSrc:
-            "https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
-          desc: "景点门票"
-        },
-        {
-          id: "008",
-          imgSrc:
-            "https://imgs.qunarzz.com/piao/fusion/1803/35/9639025c30a3d802.png",
-          desc: "一日游"
-        },
-        {
-          id: "009",
-          imgSrc:
-            "https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
-          desc: "景点门票"
-        },
-        {
-          id: "010",
-          imgSrc:
-            "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/3ef092d0a89ffddb7f781cda30c8ae49.png",
-          desc: "暑假大促"
-        },
-        {
-          id: "011",
-          imgSrc:
-            "https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
-          desc: "景点门票"
-        }
-      ]
+      }
     };
+  },
+  props:{
+    iconList:Array
   },
   computed: {
     pages() {

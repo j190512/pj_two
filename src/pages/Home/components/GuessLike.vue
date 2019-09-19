@@ -5,16 +5,16 @@
       <span>猜你喜欢</span>
     </div>
     <ul class="like-list">
-      <li class="like-item" v-for="item of list" :key="item.id">
+      <li class="like-item" v-for="item of guessList" :key="item.id">
         <a href="#">
           <div class="like-img">
             <img :src="item.imgUrl" alt />
-            <div class="tag">随买随用</div>
+            <div class="tag">{{item.tagName}}</div>
           </div>
           <div class="like-info">
             <div class="like-title">{{item.name}}</div>
             <div class="like-comment">
-              <span class="stars">※※※※※</span>
+              <span v-for="i of item.stars" :key="i" class="iconfont like-stars">&#xe647;</span>
               <span class="comment-num">{{item.commentNum}}</span>
             </div>
             <div class="like-price">
@@ -26,7 +26,7 @@
               <span class="place">{{item.place}}</span>
             </div>
             <div class="like-feature">
-              <span class="txt">{{item.feature}}</span>
+              <span class="txt" v-if="item.feature">{{item.feature}}</span>
             </div>
           </div>
         </a>
@@ -38,37 +38,8 @@
 <script>
 export default {
   name: "HomeGuessLike",
-  data(){
-      return {
-         list: [
-    {
-      imgUrl:
-        "https://imgs.qunarzz.com/sight/p0/1901/d2/d20386fec7943deba3.img.jpg_200x200_6c120222.jpg",
-      name: "科技馆 ",
-      commentNum: "1000条评论 ",
-      price: "90",
-      place: "思明区",
-      feature: "寓教于乐"
-    },
-        {
-      imgUrl:
-        "https://imgs.qunarzz.com/sight/p0/1901/d2/d20386fec7943deba3.img.jpg_200x200_6c120222.jpg",
-      name: "科技馆 ",
-      commentNum: "1000条评论 ",
-      price: "90",
-      place: "思明区",
-      feature: "寓教于乐"
-    },    {
-      imgUrl:
-        "https://imgs.qunarzz.com/sight/p0/1901/d2/d20386fec7943deba3.img.jpg_200x200_6c120222.jpg",
-      name: "科技馆 ",
-      commentNum: "1000条评论 ",
-      price: "90",
-      place: "思明区",
-      feature: "寓教于乐"
-    },
-  ]
-      }
+  props:{
+    guessList:Array
   }
  
 };
@@ -133,9 +104,12 @@ export default {
         .like-comment
           margin-top 0.14rem
           font-size 0.24rem
-          // .like-stars
+          .like-stars
+            font-size .2rem
+            color #ffb436
           .comment-num
             vertical-align text-bottom
+            margin-left .16rem
             font-size 0.24rem
         .like-price
           position relative

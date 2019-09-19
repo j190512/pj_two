@@ -1,11 +1,11 @@
 <template>
   <div class="bgc">
-      <home-header></home-header>
-      <home-swiper></home-swiper>
-      <home-icons></home-icons>
-      <home-week></home-week>
-      <home-guess-like></home-guess-like>
-      <home-weekend></home-weekend>
+      <home-header :city=city></home-header>
+      <home-swiper :swiperList=swiperList></home-swiper>
+      <home-icons :iconList=iconList></home-icons>
+      <home-week :hotList=weekList></home-week>
+      <home-guess-like :guessList=guessList></home-guess-like>
+      <home-weekend :weekendList=weekendList></home-weekend>
   </div>
 </template>
 
@@ -16,6 +16,7 @@ import HomeIcons from './components/Icons'
 import HomeWeek from './components/Week'
 import HomeGuessLike from './components/GuessLike'
 import HomeWeekend from './components/weekend'
+import axios from 'axios'
 export default {
   name: 'Home',
   components:{
@@ -25,6 +26,32 @@ export default {
     HomeWeek,
     HomeGuessLike,
     HomeWeekend
+  },
+  data(){
+    return {
+      city:'',
+      swiperList:[],
+      iconList:[],
+      weekList:[],
+      guessList:[],
+      weekendList:[]
+    }
+  },
+  methods:{
+    getHomeInfo(){
+      axios.get('/api/index.json').then(res=>{
+        const data = res.data.data;
+        this.city = data.city;
+        this.swiperList = data.swiperList;
+        this.iconList = data.iconList;
+        this.weekList = data.weekList;
+        this.guessList = data.guessList;
+        this.weekendList = data.weekendList;
+      })
+    }
+  },
+  mounted(){
+    this.getHomeInfo()
   }
 }
 </script>
