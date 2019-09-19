@@ -1,0 +1,189 @@
+{
+    "ret":true,
+    "data":{
+        "city":"广州",
+        "swiperList":[{
+            "id":"001",
+            "imgUrl":"https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20199/5e82991722549bfec5ada28ab25d0820.jpg_750x200_4bb9032d.jpg"
+        },{
+            "id":"002",
+            "imgUrl":"https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20199/502edc9723264c9dc53d26d2ca9680e0.jpg_750x200_b4981e1c.jpg"
+        },{
+            "id":"003",
+            "imgUrl":"https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20199/249dfa53de67b8824a96f9821e58f30d.jpg_750x200_48bf24d9.jpg"
+        },{
+            "id":"004",
+            "imgUrl":"https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20199/dd7c1ed57e6315e738545578e60212e4.jpg_750x200_8f87eb30.jpg"
+        }
+        ],
+        "iconList":[{
+            "id":"001",
+            "imgUrl":"https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+            "desc":"景点门票"
+        },{
+            "id":"002",
+            "imgUrl":"https://imgs.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+            "desc":"广州必游"
+        },{
+            "id":"003",
+            "imgUrl":"https://imgs.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+            "desc":"动植物园"
+        },{
+            "id":"004",
+            "imgUrl":"https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/a40ee278d67000f2a29d2e20f6a029b3.png",
+            "desc":"自然风光"
+        },{
+            "id":"005",
+            "imgUrl":"https://imgs.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+            "desc":"一日游"
+        },{
+            "id":"006",
+            "imgUrl":"https://imgs.qunarzz.com/piao/fusion/1803/3e/86314b2af03b7502.png",
+            "desc":"水上乐园"
+        },{
+            "id":"007",
+            "imgUrl":"https://imgs.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png",
+            "desc":"亲子游"
+        },{
+            "id":"008",
+            "imgUrl":"https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/184e261814a5d07a5d3d08cd29cf590d.png",
+            "desc":"长隆度假区"
+        },{
+            "id":"009",
+            "imgUrl":"https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/c032ae43b15a3dac34b5e07bb0e46850.png",
+            "desc":"广州塔"
+        },{
+            "id":"010",
+            "imgUrl":"https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/bda58ffc3016edad84e656e8a94b0321.png",
+            "desc":"广州融创"
+        }],
+        "weekList":[{
+            "id": "001",
+            "tag":
+              "https://imgs.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png",
+            "imgUrl":
+              "https://imgs.qunarzz.com/sight/p0/1908/70/70a9ac02a1edfba4a3.img.jpg_250x250_847f67ca.jpg",
+            "sightName": "广州长隆旅游度假区",
+            "priceNum": 92
+          },{
+            "id": "002",
+            "tag":
+              "https://imgs.qunarzz.com/piao/fusion/1710/2d/36d0c4adaebbbc02.png",
+            "imgUrl":
+              "https://imgs.qunarzz.com/sight/p0/1505/f9/f9b8e8963c0ed040.water.jpg_250x250_0e57c65a.jpg",
+            "sightName": "南粤苑",
+            "priceNum": 42
+          },{
+            "id": "003",
+            "tag":
+              "https://imgs.qunarzz.com/piao/fusion/1710/67/edc47ffef9e96b02.png",
+            "imgUrl":
+              "https://imgs.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_250x250_30e841af.jpg",
+            "sightName": "长隆野生动物世界",
+            "priceNum": 279
+          },{
+            "id": "004",
+            "imgUrl":
+              "https://imgs.qunarzz.com/sight/p0/1809/56/5639ccfd58c4cca4a3.img.png_250x250_e8f9a22a.png",
+            "sightName": "广州正佳极地海洋世界",
+            "priceNum": 70
+          },{
+            "id": "005",
+            "imgUrl":
+              "https://imgs.qunarzz.com/sight/p0/1707/d8/d89ab1a9b2ab355ba3.img.jpg_250x250_dc7083b2.jpg",
+            "sightName": "长隆水上乐园",
+            "priceNum": 125
+          },{
+            "id": "006",
+            "imgUrl":
+              "https://imgs.qunarzz.com/sight/p0/1707/88/889ae02b07140066a3.img.jpg_250x250_d4ca7f0a.jpg",
+            "sightName": "长隆欢乐世界",
+            "priceNum": 97
+          },{
+            "id": "007",
+            "imgUrl":
+              "https://imgs.qunarzz.com/sight/p0/1509/80/9535a0d28468b3c6c910d87f1a4fdbe8.water.jpg_250x250_9e672db6.jpg",
+            "sightName": "岭南印象园",
+            "priceNum": 52.5
+          },{
+            "id": "008",
+            "imgUrl":
+              "https://imgs.qunarzz.com/sight/p0/1603/1c/1c67791edbe2677b90.img.jpg_250x250_8f1dcbbd.jpg",
+            "sightName": "珠江夜游",
+            "priceNum": 98
+          },{
+            "id": "009",
+            "imgUrl":
+              "https://imgs.qunarzz.com/sight/p0/201212/31/309a88f591369b6893835fbb.png_250x250_19f299f9.png",
+            "sightName": "广东科学中心",
+            "priceNum": 42
+          },{
+            "id": "010",
+            "imgUrl":
+              "https://imgs.qunarzz.com/sight/p0/1603/ee/ee2fb567add7969390.water.jpg_250x250_9f556831.jpg",
+            "sightName": "广州塔",
+            "priceNum": 98
+          }],
+        "guessList":[  
+             {
+            "id":"001",
+            "imgUrl":
+              "https://imgs.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_200x200_ea02ef99.jpg",
+            "name": "长隆野生动物世界",
+            "tagName":"可订明日",
+            "stars":5,
+            "commentNum": "124085条评论",
+            "price": "279",
+            "place": "广州长隆...",
+            "feature": "熊猫三胞胎与您共享欢乐时光"
+          },  {
+              "id":"002",
+            "imgUrl":
+              "https://imgs.qunarzz.com/sight/p0/1908/70/70a9ac02a1edfba4a3.img.jpg_200x200_8d98cd84.jpg",
+            "name": "广州长隆旅游度假区",
+            "tagName":"可订明日",
+            "stars":5,
+            "commentNum": "51460条评论",
+            "price": "92",
+            "place": "番禺",
+            "feature": "《奔跑吧兄弟》取景地"
+          }, {
+            "id":"003",
+            "imgUrl":
+              "https://imgs.qunarzz.com/sight/p0/1901/d2/d20386fec7943deba3.img.jpg_200x200_6c120222.jpg",
+            "name": "长隆欢乐世界",
+            "tagName":"可订明日",
+            "stars":5,
+            "commentNum": "63125条评论",
+            "price": "96",
+            "place": "广州长隆...",
+            "feature": "爱挑战的你怎能错过垂直过山车"
+          },{
+            "id":"004",
+            "imgUrl":
+              "https://imgs.qunarzz.com/sight/p0/1601/3d/3dc7f222d6bca6a790.img.jpg_200x200_e0bb3017.jpg",
+            "name": "广州花城汇MAG环球魔幻世界",
+            "tagName":"可订明日",
+            "stars":5,
+            "commentNum": "4931条评论",
+            "price": "127",
+            "place": "广州"
+          }],
+        "weekendList":[{
+            "id":"001",
+            "imgUrl":"https://imgs.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg",
+            "productName":"清远周边逛",
+            "productDesc":"人人都有一双发现美的眼睛，身边的事物最熟悉不过，那你可曾发现了被人遗漏的美？"
+        },{
+            "id":"002",
+            "imgUrl":"https://imgs.qunarzz.com/sight/source/1811/b8/5d599bbdcf8b57.jpg_r_640x214_2ee055e3.jpg",
+            "productName":"浮在海上的绿洲",
+            "productDesc":"南国滨海之城，避寒胜地，有暖暖的阳光，海风习习，吃着海鲜逛逛老街多惬意啊"
+        },{
+            "id":"003",
+            "imgUrl":"https://imgs.qunarzz.com/sight/source/1505/92/580e9ea4f37a1b.jpg_r_640x214_72112761.jpg",
+            "productName":"广州必打卡",
+            "productDesc":"感受现代与传统相融合的广州"
+        }]
+    }
+}
