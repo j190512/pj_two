@@ -115,6 +115,7 @@ export default {
   width 100%
   bottom 0
 .icons
+  background-color #fff
   overflow hidden
   width 100%
   height 3.7rem
