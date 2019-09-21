@@ -13,7 +13,6 @@ export default {
 <style lang='stylus' scoped>
     @import '~styles/variables.styl'
     .search
-        margin-top .79rem
         height .68rem
         background $bgColor
         padding  .1rem 

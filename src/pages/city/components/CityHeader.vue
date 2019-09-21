@@ -35,7 +35,7 @@ methods:{
 @import '~styles/variables.styl'
 .header
   position relative
-  height 0.68rem
+  height 1.48rem
   line-height 0.68rem
   color #ffffff
   font-size 0.32rem
