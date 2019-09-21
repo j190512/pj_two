@@ -1,0 +1,77 @@
+[33mcommit 18a85e6820b6ff8fd99ebdc7126bee12a20352f9[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: j190512 <j190512@163.com>
+Date:   Sat Sep 21 09:48:19 2019 +0800
+
+    city-search
+
+[33mcommit 9cbc9e159dedbbbe86a2f6e3057a1209455f0929[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/city-search[m[33m, [m[1;31morigin/city-header[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mcity-search[m[33m, [m[1;32mcity-header[m[33m)[m
+Author: j190512 <j190512@163.com>
+Date:   Fri Sep 20 23:26:30 2019 +0800
+
+     add city-header
+
+[33mcommit 9424f6a98d5ff5109e64596d75d6f62f8f4b4201[m
+Author: j190512 <j190512@163.com>
+Date:   Fri Sep 20 00:19:45 2019 +0800
+
+    index的数据json文件
+
+[33mcommit 7707aa4352cdc5d5fdcfff8d3c6152af806eef28[m[33m ([m[1;31morigin/index-ajax[m[33m, [m[1;32mindex-ajax[m[33m)[m
+Author: j190512 <j190512@163.com>
+Date:   Fri Sep 20 00:09:11 2019 +0800
+
+    add ajax
+
+[33mcommit bf683c4f52c71c31fe98bfb29caf5c8006783757[m[33m ([m[1;31morigin/index-week[m[33m, [m[1;32mindex-week[m[33m)[m
+Author: j190512 <j190512@163.com>
+Date:   Thu Sep 19 20:19:44 2019 +0800
+
+    add weekend
+
+[33mcommit aa06304cbd78f8acbc4bece087ca3cd18d303273[m
+Author: j190512 <j190512@163.com>
+Date:   Thu Sep 19 15:14:51 2019 +0800
+
+    hot-week
+
+[33mcommit 44f80f3d1c728f8b758df9f644b1abedcb25ad93[m[33m ([m[1;31morigin/index-icons[m[33m, [m[1;32mindex-icons[m[33m)[m
+Author: j190512 <j190512@163.com>
+Date:   Wed Sep 18 23:18:14 2019 +0800
+
+    add icon
+
+[33mcommit 22e9bf4a0a5e0455d3fc94362a210e2490da9dd1[m[33m ([m[1;31morigin/index-swiper[m[33m, [m[1;32mindex-swiper[m[33m)[m
+Author: j190512 <j190512@163.com>
+Date:   Wed Sep 18 16:27:15 2019 +0800
+
+    swiper
+
+[33mcommit d2b4aac87b2a193e07f5cf453e73e8b481f81feb[m
+Author: jJ <j190512@163.com>
+Date:   Mon Sep 16 17:23:39 2019 +0800
+
+    header icon
+
+[33mcommit 84da61f3e73d96b1e609d8e2014e18d9c925fd97[m
+Author: jJ <j190512@163.com>
+Date:   Mon Sep 16 11:54:36 2019 +0800
+
+    delete 无关文件
+
+[33mcommit 050970a71db7daef1e80113dcec56e850fe23f6e[m
+Author: j190512 <j190512@163.com>
+Date:   Thu Sep 12 14:58:40 2019 +0800
+
+    project init
+
+[33mcommit 8a96255dc9b77a47102706f65f1e595efc8a865a[m
+Author: j190512 <j190512@163.com>
+Date:   Thu Sep 5 13:51:18 2019 +0800
+
+    新增了购买的功能
+
+[33mcommit 1e3448e4d68064ca75d7ad93d228d425479a43be[m
+Author: j190512 <j190512@163.com>
+Date:   Sat Aug 24 19:53:36 2019 +0800
+
+    vue Webapp
