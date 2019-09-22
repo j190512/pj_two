@@ -9,6 +9,7 @@ import 'styles/reset.css'
 import 'styles/iconfont.css'
 //引入解决移动端1像素问题的css文件
 import 'styles/border.css'
+export const bus = new Vue()
 fastClick.attach(document.body)
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
 

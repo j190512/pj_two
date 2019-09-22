@@ -13,7 +13,7 @@
           <a href="#">{{item.name}}</a>
         </li>
       </ul>      
-      <ul v-for="(item,key) of cities" :key="key">
+      <ul v-for="(item,key) of cities" :key="key" :ref="key">
         <div class="title">{{key}}</div>
         <li v-for="i of item" :key="i.id">
           <a href="#">{{i.name}}</a>
@@ -25,19 +25,30 @@
 
 <script>
 import BScroll from "better-scroll";
+// import {bus} from "../../../main"
 export default {
   name: "CityList",
   props:{
     cities:Object,
     hotCities:Array,
-    city:String
-  },
-  created(){
-    // 
+    city:String,
+    letter:String
   },
   mounted() {
-    let scroll = new BScroll(this.$refs.wrapper);
-    console.log(this.cities)
+    this.scroll = new BScroll(this.$refs.wrapper);
+    // console.log(this.cities)
+    // bus.$on('change',letter=>{
+    //     this.letter = letter;
+    //     console.log('字母')
+    // })
+  },
+  watch:{
+    letter(){
+      if(this.letter){
+        const element = this.$refs[this.letter][0]
+        this.scroll.scrollToElement(element)
+      }
+    }
   }
 };
 </script>
