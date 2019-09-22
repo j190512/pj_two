@@ -6,7 +6,7 @@
     <div class="content" ref="wrap" v-show="keyword">
       <div>
         <ul>
-          <li v-for="item of resultCities" :key="item.id">{{item.name}}</li>
+          <li v-for="item of resultCities" :key="item.id" @click="handleChangeCity(item.name)">{{item.name}}</li>
           <li v-show="ifShow">没有数据</li>
         </ul>
       </div>
@@ -37,8 +37,14 @@ export default {
     return !this.resultCities.length
     }
   },
+  methods:{
+    handleChangeCity(city){
+      this.$store.dispatch('changeCity',city)
+      this.$router.push('/')
+    }
+  },
   mounted() {
-    this.scroll = new BScroll(this.$refs.wrap);
+    this.scroll = new BScroll(this.$refs.wrap,{click: true});
   },
   watch: {
     keyword() {

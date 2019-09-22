@@ -1,6 +1,6 @@
 <template>
   <div class="bgc">
-      <home-header :cityName="city"></home-header>
+      <home-header></home-header>
       <home-swiper :swiperList="swiperList"></home-swiper>
       <home-icons :iconList="iconList"></home-icons>
       <home-week :hotList="weekList"></home-week>
@@ -29,7 +29,6 @@ export default {
   },
   data(){
     return {
-      city:'',
       swiperList:[],
       iconList:[],
       weekList:[],
@@ -41,7 +40,6 @@ export default {
     getHomeInfo(){
       axios.get('/api/index.json').then(res=>{
         const data = res.data.data;
-        this.city = data.city;
         this.swiperList = data.swiperList;
         this.iconList = data.iconList;
         this.weekList = data.weekList;

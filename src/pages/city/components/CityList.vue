@@ -9,14 +9,14 @@
       </ul>
       <div class="title">热门城市</div>
       <ul>
-        <li  v-for="item of hotCities" :key="item.id">
-          <a href="#">{{item.name}}</a>
+        <li  v-for="item of hotCities" :key="item.id" @click="handleChangeCity(item.name)">
+          {{item.name}}
         </li>
       </ul>      
       <ul v-for="(item,key) of cities" :key="key" :ref="key">
         <div class="title">{{key}}</div>
         <li v-for="i of item" :key="i.id">
-          <a href="#">{{i.name}}</a>
+          <a href="#" @click="handleChangeCity(i.name)">{{i.name}}</a>
         </li>       
       </ul>
     </div>
@@ -35,7 +35,7 @@ export default {
     letter:String
   },
   mounted() {
-    this.scroll = new BScroll(this.$refs.wrapper);
+    this.scroll = new BScroll(this.$refs.wrapper,{click: true});
     // console.log(this.cities)
     // bus.$on('change',letter=>{
     //     this.letter = letter;
@@ -49,6 +49,12 @@ export default {
         this.scroll.scrollToElement(element)
       }
     }
+  },
+  methods:{
+    handleChangeCity(city){
+      this.$store.dispatch('changeCity',city)
+      this.$router.push('/')
+    },
   }
 };
 </script>
