@@ -17,6 +17,7 @@ import HomeWeek from './components/Week'
 import HomeGuessLike from './components/GuessLike'
 import HomeWeekend from './components/weekend'
 import axios from 'axios'
+import {mapState} from 'vuex'
 export default {
   name: 'Home',
   components:{
@@ -29,6 +30,7 @@ export default {
   },
   data(){
     return {
+      lastCity:'',
       swiperList:[],
       iconList:[],
       weekList:[],
@@ -36,9 +38,12 @@ export default {
       weekendList:[]
     }
   },
+  computed:{
+    ...mapState(['city'])
+  },
   methods:{
     getHomeInfo(){
-      axios.get('/api/index.json').then(res=>{
+      axios.get('/api/index.json?city='+this.city).then(res=>{
         const data = res.data.data;
         this.swiperList = data.swiperList;
         this.iconList = data.iconList;
@@ -50,6 +55,13 @@ export default {
   },
   created(){
     this.getHomeInfo()
+    this.lastCity = this.city
+  },
+  activated(){
+    if(this.lastCity !== this.city){
+      this.lastCity = this.city
+      this.getHomeInfo()
+    }
   }
 }
 </script>
