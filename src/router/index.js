@@ -10,7 +10,7 @@ export default new Router({
     name: 'Home',
     component: Home
   },{
-    path:'/city',
+    path:'/city/:city',
     name:'City',
     component:City
   }]

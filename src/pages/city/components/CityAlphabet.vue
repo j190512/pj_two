@@ -1,37 +1,15 @@
 <template>
   <ul class="list">
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
-      <li>a</li>
+      <li v-for="(item,key) in cities" :key="key">{{key}}</li>
   </ul>
 </template>
 
 <script>
 export default {
-    name:"CityAlphabet"
+    name:"CityAlphabet",
+    props:{
+        cities:Object
+    }
 }
 </script>
 
@@ -51,5 +29,6 @@ export default {
             font-size .3rem
             text-align center
             color $bgColor
+            margin-top .1rem
 
 </style>

@@ -4,164 +4,20 @@
       <div class="title">当前城市</div>
       <ul>
         <li>
-          <a href="#">广州</a>
+          <a href="#">{{city}}</a>
         </li>
       </ul>
       <div class="title">热门城市</div>
       <ul>
-        <li>
-          <a href="#">广州</a>
+        <li  v-for="item of hotCities" :key="item.id">
+          <a href="#">{{item.name}}</a>
         </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-      </ul>
-      <div class="title">A</div>
-      <ul>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-      </ul>
-      <div class="title">B</div>
-      <ul>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-      </ul>
-      <div class="title">C</div>
-      <ul>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
-        <li>
-          <a href="#">广州</a>
-        </li>
+      </ul>      
+      <ul v-for="(item,key) of cities" :key="key">
+        <div class="title">{{key}}</div>
+        <li v-for="i of item" :key="i.id">
+          <a href="#">{{i.name}}</a>
+        </li>       
       </ul>
     </div>
   </div>
@@ -171,8 +27,17 @@
 import BScroll from "better-scroll";
 export default {
   name: "CityList",
+  props:{
+    cities:Object,
+    hotCities:Array,
+    city:String
+  },
+  created(){
+    // 
+  },
   mounted() {
     let scroll = new BScroll(this.$refs.wrapper);
+    console.log(this.cities)
   }
 };
 </script>

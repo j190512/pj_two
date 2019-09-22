@@ -7,9 +7,10 @@
       <span class="iconfont">&#xe636;</span>
       输入景点|城市|游玩主题
     </div>
-    <router-link to="/city">
-          <div class="header-right">
-      <div class="iconfont arrow-icon">{{this.city}}&#xe64a;</div>
+    <!-- <router-link v-if="cityName" :to="{path:'/city/:city',query:{city:cityName}}"  > -->
+        <router-link v-if="cityName" :to="{name:'City',params:{city:cityName}}"  >
+          <div class="header-right" >
+      <div class="iconfont arrow-icon">{{cityName}}&#xe64a;</div>
     </div>
     </router-link>
 
@@ -20,7 +21,7 @@
 export default {
   name: "HomeHeader",
   props:{
-    city:String
+    cityName:String
   }
 };
 </script>

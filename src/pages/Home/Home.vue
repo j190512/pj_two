@@ -1,11 +1,11 @@
 <template>
   <div class="bgc">
-      <home-header :city=city></home-header>
-      <home-swiper :swiperList=swiperList></home-swiper>
-      <home-icons :iconList=iconList></home-icons>
-      <home-week :hotList=weekList></home-week>
-      <home-guess-like :guessList=guessList></home-guess-like>
-      <home-weekend :weekendList=weekendList></home-weekend>
+      <home-header :cityName="city"></home-header>
+      <home-swiper :swiperList="swiperList"></home-swiper>
+      <home-icons :iconList="iconList"></home-icons>
+      <home-week :hotList="weekList"></home-week>
+      <home-guess-like :guessList="guessList"></home-guess-like>
+      <home-weekend :weekendList="weekendList"></home-weekend>
   </div>
 </template>
 
@@ -50,7 +50,7 @@ export default {
       })
     }
   },
-  mounted(){
+  created(){
     this.getHomeInfo()
   }
 }
