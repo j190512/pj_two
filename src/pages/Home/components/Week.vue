@@ -9,7 +9,7 @@
       </a>
     </div>
     <ul class="hotsale-list">
-      <li class="hotsale-item" v-for="item of hotList" :key="item.id">
+      <router-link class="hotsale-item" v-for="item of hotList" :key="item.id" :to="{path:'/detail/'+item.id}">
         <a href="#">
           <div class="hot-tag" v-if="item.tag">
             <img :src="item.tag" alt srcset />
@@ -25,7 +25,7 @@
             </span>起
           </div>
         </a>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
